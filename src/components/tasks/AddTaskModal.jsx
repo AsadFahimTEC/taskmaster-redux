@@ -38,7 +38,7 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             className="w-full p-2 border border-gray-300 rounded focus:outline-none mt-2"
           />
           <select
-            {...register("assign to")}
+            {...register("assignedTo")}
             className="w-full p-2 border border-gray-300 rounded focus:outline-none mt-2"
           >
             <option value="asad ahmed">Asad Ahmed</option>

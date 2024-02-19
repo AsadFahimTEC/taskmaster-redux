@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const Tasks = () => {
   const [isOpen, setIsOpen] = useState(false);
   const {tasks} = useSelector((state) => state.tasksSlice);
-  console.log(tasks);
+  // console.log(tasks);
 
   return (
     <div className="h-screen grid grid-cols-12">
