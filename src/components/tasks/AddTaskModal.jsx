@@ -41,12 +41,12 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             {...register("assignedTo")}
             className="w-full p-2 border border-gray-300 rounded focus:outline-none mt-2"
           >
-            <option value="asad ahmed">Asad Ahmed</option>
-            <option value="robiul islam">Robiul Islam</option>
-            <option value="dip pramanik">Dip Pramanik</option>
-            <option value="benjir sultana">Benjir Sultana</option>
-            <option value="shakil ahmed">Shakil Ahmed</option>
-            <option value="sourav datta">Sourav Datta</option>
+            <option value="Asad Ahmed">Asad Ahmed</option>
+            <option value="Robiul Islam">Robiul Islam</option>
+            <option value="Dip Pramanik">Dip Pramanik</option>
+            <option value="Benjir Sultana">Benjir Sultana</option>
+            <option value="Shakil Ahmed">Shakil Ahmed</option>
+            <option value="Sourav Datta">Sourav Datta</option>
           </select>
           <select
             {...register("priority")}
