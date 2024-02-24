@@ -1,9 +1,19 @@
-import { useGetPostByIdQuery, useGetPostsQuery } from "../redux/features/api/baseApi";
+import { useForm } from "react-hook-form";
+import { useGetPostByIdQuery, useGetPostsQuery, useSetPostMutation } from "../redux/features/api/baseApi";
 
 
 const Feed = () => {
     // const {data: posts, isLoading, isError, error} = useGetPostsQuery();
     const {data: posts, isLoading, isError, error} = useGetPostByIdQuery(1);
+
+    const [setPost, {data: postData}] = useSetPostMutation();
+
+    const {register, handleSubmit} = useForm();
+
+    const onSubmit = (data) =>{
+        // setPost(data);
+        setPost({title: "this is a title", body: data.post, userId: 7965});
+    }
 
     if(isLoading){
         return <p className="text-9xl text-zinc-300">Loading...</p>
